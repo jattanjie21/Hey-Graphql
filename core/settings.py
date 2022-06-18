@@ -41,8 +41,9 @@ INSTALLED_APPS = [
     'graphene_django',
 ]
 
+# This tells django to look for a graphql schema in core / schema.py
 GRAPHENE = {
-    'SCHEMA' : 'recipe_api.schema.schema',
+    'SCHEMA' : 'core.schema.schema',
 }
 
 

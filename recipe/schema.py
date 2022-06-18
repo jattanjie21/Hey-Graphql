@@ -8,7 +8,7 @@ class RecipeType(DjangoObjectType):
 
     class Meta:
         model = Recipe
-        fields = ('dish','description')
+        fields = ('__all__')
 
 class Query(ObjectType):
 
