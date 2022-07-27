@@ -12,6 +12,10 @@ class RecipeType(DjangoObjectType):
 
 class Query(ObjectType):
 
+    """
+    This query returns all the recipes listed in the
+    database.
+    """
     all_recipes = graphene.List(RecipeType)
 
     def resolve_all_recipes(self, info):
